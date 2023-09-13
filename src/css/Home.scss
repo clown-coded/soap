@@ -1,0 +1,261 @@
+@import 'colours';
+
+.home-page{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-section{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.home-bg{
+    position: relative;
+   height: 110vh;
+   width: 105vw;
+   top: -5px;
+   left: -20px;
+   overflow: hidden;
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  transform-origin: center center;
+}
+
+.home-bg.reverse{
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  margin-top: -110px;
+}
+
+.figure-container{
+  position: absolute;
+  top: 20px;
+  z-index: 20;
+  height: 98vh;
+  right: -20px;
+  overflow: hidden;
+  img{
+
+    height: 180%;
+  }
+}
+
+.home-tagline{
+    position: absolute;
+    z-index: 3;
+    left: 50px;
+    height: 30vh;
+    top: 30vh;
+}
+
+.donate-section{
+  
+  background-color: $blue;
+  width: 90vw;
+  margin-top: 10px;
+  color: white;
+ margin-bottom: 10px;
+  z-index: 40;
+ padding: 100px 200px 100px 200px;
+}
+.donate-btn-container, .join-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.join-container{
+  flex-direction: column;
+  gap: 10px
+
+}
+
+.donate-btn, .join-field{
+  position: relative;
+  font-size: 40px;
+  border: 2px solid white;
+  width: 22%;
+  text-align: center;
+  padding: 20px 40px;
+  transition: all .2s ease;
+
+  &:hover{
+    background-color: white;
+    color: $red;
+    transition: all .2s ease;
+  }
+}
+.fields-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.join-field{
+  background-color: $blue;
+  color: white;
+  width: 80%;
+  
+  &:focus-visible{
+    outline: none;
+  }
+}
+
+.join-checkbox{
+  height: 50px;
+  
+}
+
+.donate-submit{
+  font-size: 50px;
+  text-align: right;
+  &:hover{
+    color: $red;
+    color: $red;
+    transition: all .2s ease;
+  }
+ 
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-left: 7vw;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 2px solid white;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: white;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: $blue;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 1200px) {
+
+  .home-tagline{
+    width:  90vw;
+    height: auto;
+    left: 10px;
+    top: 150px;
+    z-index: 50;
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .figure-container{
+    height: 98vh;
+    padding-top: 180px;
+    right: -150px;
+    overflow: hidden;
+  }
+
+  .donate-section{
+    margin-top: 100px;
+    background-color: $blue;
+    width: 100vw;
+    margin-left: 0;
+    color: white;
+   margin-bottom: 100px;
+    z-index: 40;
+   margin: 0px 0px 0px 0px;
+   padding: 20px 50px 50px 50px;
+   h2{
+    line-height: 1.05;
+    font-size: 37px;
+  }
+  h3{
+    padding-top: 10px;
+    font-size: 30px;
+  }
+
+  }
+
+  .donate-btn-container, .join-container{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  
+  }
+
+  .donate-btn{
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .join-field{
+    width:100%;
+    font-size: 20px;
+    color: white;
+    
+  }
+
+  .container{
+    margin-left: -6vw;
+  }
+
+}

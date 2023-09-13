@@ -1,0 +1,25 @@
+.values-wrapper{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.charter-container, .values-container{
+    height: 100vh;
+    width: 100vh;
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+
+    padding-top: 200px ;
+    color: white;
+
+}
+
+.values-container{
+    top: 90vh;
+}
+
+.charter-container{
+    top: 0;
+}

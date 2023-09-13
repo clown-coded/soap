@@ -1,0 +1,283 @@
+@import 'colours';
+
+.nav-wrapper{
+    width: 100vw;
+    height: 4vw;
+    
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    user-select: none;
+
+}
+.nav-links-wrapper{
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    height: 6vh;
+    left: 35vw;
+    padding-left: 20px;
+    background-color: white;
+    align-items: center;
+    margin-top: 100px;
+    color: $red;
+    // border-bottom: 10px solid $blue;
+}
+.nav-link{
+    font-size: 2vw;
+    font-weight: 600;
+    
+}
+
+.nav-btn-container{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -10px;
+  
+}
+
+.nav-button{
+    a{
+        width: auto;
+        color: white;
+        transition: all .24s ease;
+        &:hover{
+            color: $red;
+            transition: all .24s ease;
+        }
+    }
+    border-radius: 3px;
+    position: relative;
+    display: inline-flex;
+    border: 2px solid $red;
+    width: 150px;
+   padding: 10px 10px;
+    color:white;
+    background-color: $red;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all .24s ease;
+    &:hover{
+        color: $red;
+        background-color: white;
+        transition: all .24s ease;
+    }
+}
+
+.logo-container{
+    position: fixed;
+    height: 130px;
+    background-color: $blue_transparent;
+    
+    padding: 20px 20px;
+    height: 150px;
+    top: 0px;
+    
+    border-radius: 0px 0px 10px 10px;
+}
+
+.logo{
+    height: 90%;
+    position: relative;
+}
+
+.mobile-menu{
+    position: fixed;
+    background-color: $red;
+    width: 40vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: end;
+    padding: 50px 30px;
+    animation: slideOpen .75s ease forwards;
+   
+}
+.mobile-btn-container{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mobile-nav-link{
+    font-size: 40px;
+    margin-bottom: 20px;
+    align-self: end;
+}
+.mobile-nav-button{
+    border: 2px solid white;
+    height: 100px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+   
+}
+
+.mobile-logo{
+    width: 50%;
+}
+
+.button_container {
+    position: fixed;
+   
+    color: $red;
+    top: 7vh;
+    z-index: 121;
+    right: 37px;
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    height: 50px;
+    width: 50px;
+
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+
+}
+
+.button_container:hover {
+    opacity: .8;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.button_container.active .top {
+    background: white;
+    
+    -webkit-transform: translate(0px, 4px) rotate(-45deg);
+    transform: translate(0px, 4px) rotate(-45deg);
+    -webkit-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+    width: 40px;
+}
+
+.button_container.active .middle {
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+    background:  white;
+    
+    -webkit-transform: translate(10px, -5px) rotate(45deg);
+    transform: translate(10px, -5px) rotate(45deg);
+    width: 0px;
+}
+
+.button_container.active .bottom {
+    -webkit-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+    background:  white;
+   
+    width: 40px;
+    -webkit-transform: translate(0px, -4px) rotate(45deg);
+    transform: translate(0px, -4px) rotate(45deg);
+}
+
+.button_container span {
+    background:  $red;
+    
+    width: 40px;
+    height: 4px;
+    top: 4px;
+    position: absolute;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: none;
+}
+
+.button_container span:nth-of-type(2) {
+    top: 7px;
+    width: 0px;
+}
+
+.button_container span:nth-of-type(3) {
+    top: 12px;
+    width: 40px;
+}
+
+.button_container span:nth-of-type(4) {
+    top: 2px;
+    width: 2px;
+    height: 0px;
+    left: 19px;
+}
+
+.button_container:hover .top {
+    -webkit-transform: translate(0px, 4px);
+    transform: translate(0px, 4px);
+}
+
+.button_container:hover .middle {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+
+.button_container:hover .bottom {
+    -webkit-transform: translate(-0px, -4px);
+    transform: translate(-0px, -4px);
+}
+
+.button_container:hover .hidden {
+    -webkit-transform: translate(-0px, -5px);
+    transform: translate(-0px, -5px);
+    animation: SildeHidden .7s ease;
+    -moz-animation: SildeHidden .7s ease;
+    -webkit-animation: SildeHidden .7s ease;
+}
+
+
+@keyframes slideOpen{
+    0% {
+        right: -80vw;
+    }
+    100%{
+        right: 0vw;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .mobile-menu{
+        width: 80vw;
+    }
+
+    .logo-container{
+        height: 130px;
+        left: 20px;
+    }
+
+}
+@media screen and (max-width: 1200px) {
+
+    .nav-links-wrapper{
+        display: none;
+    }
+
+
+
+
+}
+@media screen and (min-width: 1200px) {
+
+    .mobile-nav{
+        display: none;
+    }
+
+
+
+
+}
