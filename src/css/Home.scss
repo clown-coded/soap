@@ -88,6 +88,11 @@
     transition: all .2s ease;
   }
 }
+.donate-btn.selected{
+
+  color: $red;
+  background-color: white;
+}
 .fields-container{
   display: flex;
   flex-direction: column;
@@ -103,6 +108,7 @@
   
   &:focus-visible{
     outline: none;
+    background-color: white;
   }
 }
 

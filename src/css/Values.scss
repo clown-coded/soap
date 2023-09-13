@@ -1,3 +1,6 @@
+@import 'colours';
+
+
 .values-wrapper{
 display: flex;
 flex-direction: column;
@@ -5,14 +8,19 @@ align-items: center;
 }
 
 .charter-container, .values-container{
-    height: 100vh;
+    height: auto;
     width: 100vh;
     overflow: hidden;
     display: flex;
     position: absolute;
-
-    padding-top: 200px ;
+    flex-direction: column;
+    margin-top: 150px ;
     color: white;
+    background-color: $blue;
+    p{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
 
 }
 
