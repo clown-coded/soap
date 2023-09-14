@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Nav from './Components/Nav'
 import './css/Reset.scss'
 import './css/Global.scss'
@@ -10,6 +10,7 @@ import { HashRouter } from 'react-router-dom'
 
 
 function App() {
+
 
   return (
     <HashRouter>

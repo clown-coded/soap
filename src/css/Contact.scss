@@ -1,0 +1,79 @@
+@import 'colours';
+
+
+
+.contact-page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    color: white;
+
+   
+}
+.contact-form-container{
+    position: absolute;
+    top: 16vh;
+    margin-left: 50px;
+    width:50vw;
+    height: 80vh;
+    border: 2px solid white;
+    background-color: $blue;
+    padding: 20px 50px;
+    h3{
+        margin-top: 100px;
+        margin-bottom: 200px;
+    }
+    p{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    form{
+        margin-top: 20px;
+        
+    }
+    .join-field{
+        font-size: 20px;
+        text-align: left;
+        font-family: "SuisseIntl-Medium";
+        margin-top: 10px;
+    }
+    .join-field.text-box{
+        height: 150px;
+    }
+
+    .join-submit{
+        margin-top: 50px;
+     
+    }
+}
+
+
+@media screen and (max-width: 1200px){
+
+    .contact-form-container{
+        width: 80vw;
+        padding: 20px 20px;
+
+        h2{
+            font-size: 35px;
+        }
+        p{
+            font-size: 16px;
+        }
+        .join-field{
+            font-size: 16px;
+            text-align: left;
+            font-family: "SuisseIntl-Medium";
+            margin-top: 10px;
+        }
+        .join-submit{
+            margin-top: 50px;
+            font-size: 35px;
+            text-align: right;
+        }
+    }
+    .figure-contact{
+        display: none;
+    }
+}

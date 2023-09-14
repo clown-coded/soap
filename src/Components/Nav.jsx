@@ -29,7 +29,7 @@ const Nav = () => {
             </div>
 
             {menuIsOpen && 
-            <MobileNav/>
+            <MobileNav closeMethod={toggleMenu}/>
             }
 
         </div>
@@ -44,8 +44,8 @@ const Nav = () => {
             
             <div className="nav-btn-container">
             
-            <div className="nav-button">Donate</div>
-            <div className="nav-button"><a href='#join'>Join</a></div>
+            <Link to='/'><div className="nav-button">Donate</div></Link>
+            <Link to='/'><div className="nav-button">Join</div></Link>
         </div>
 
 

@@ -7,6 +7,11 @@ import DonateSection from '../Components/DonateSection'
 import JoinSection from '../Components/JoinSection'
 
 const Home = () => {
+
+ 
+    
+  
+
   return (
     <div className='home-page page-section'>
       <div className="header-section">
