@@ -1,6 +1,6 @@
 import React from 'react'
 import bg from '../../public/assets/bg.png'
-import tagline from '../../public/assets/tagline.png'
+import tagline from '../../public/assets/tagline.mp4'
 import sam from '../../public/assets/test.png'
 import '../css/Home.scss'
 import DonateSection from '../Components/DonateSection'
@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div className='home-page page-section'>
       <div className="header-section">
-        <img src={tagline} className='home-tagline' alt="" />
+        <video  src={tagline} autoPlay loop muted className='home-tagline' />
         <div className="figure-container">
           <img src={sam} className='figure' alt="" />
           </div>

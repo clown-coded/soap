@@ -20,9 +20,9 @@
     display: flex;
     justify-content: space-between;
     width: 60vw;
-    height: 6vh;
+    height: 7vh;
     left: 35vw;
-    padding-left: 20px;
+    padding-left: 30px;
     background-color: white;
     align-items: center;
     margin-top: 100px;
@@ -30,7 +30,7 @@
     // border-bottom: 10px solid $blue;
 }
 .nav-link{
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: 600;
     
 }
@@ -58,8 +58,9 @@
  
     position: relative;
     display: inline-flex;
-    border: 2px solid $red;
+   
     width: 150px;
+    height: 100%;
    padding: 10px 10px;
     color:white;
     background-color: $red;
@@ -69,7 +70,9 @@
     text-transform: uppercase;
     font-weight: 500;
     transition: all .24s ease;
+    margin-bottom: 10px;
     &:hover{
+        border: 2px solid $red;
         color: $red;
         background-color: white;
         transition: all .24s ease;

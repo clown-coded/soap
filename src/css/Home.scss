@@ -49,6 +49,12 @@
     left: 50px;
     height: 30vh;
     top: 30vh;
+
+    video{
+      
+      object-fit: cover;
+      object-position: center center;
+    }
 }
 
 .donate-section{
@@ -113,6 +119,10 @@
   }
 }
 
+input{
+  color: white;
+}
+
 .join-checkbox{
   height: 50px;
   
@@ -137,6 +147,7 @@
   color: white;
   border-color: $blue;
   border-style: none;
+  
 }
 .submitted-dialog{
   padding-top: 100px;
@@ -217,7 +228,7 @@
     height: auto;
     left: 10px;
     top: 150px;
-    z-index: 50;
+    z-index: 18;
 
     img{
       width: 100%;
