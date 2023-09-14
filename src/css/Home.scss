@@ -112,6 +112,9 @@
   background-color: $blue;
   color: white;
   width: 80%;
+  &::placeholder{
+    color: white;
+  }
   
   &:focus-visible{
     outline: none;
@@ -121,6 +124,7 @@
 
 input{
   color: white;
+ 
 }
 
 .join-checkbox{
