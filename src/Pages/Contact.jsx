@@ -63,9 +63,9 @@ const Contact = () => {
                 <form   action={FORM_ENDPOINT}
                     onSubmit={handleSubmit}
                     method="POST">
-                    <input type="text" className='join-field' placeholder="Your name" name="name" required />
-                    <input type="email" className='join-field' placeholder="Email" name="email" required />
-                    <textarea className='join-field text-box' placeholder="Your message" name="message" required />
+                    <input type="text" required className='join-field' placeholder="Your name" name="name" required />
+                    <input type="email" required  className='join-field' placeholder="Email" name="email" required />
+                    <textarea required className='join-field text-box' placeholder="Your message" name="message" required />
                     <button type="submit" className="join-submit"> Send a message </button>
                 </form>
               </div>

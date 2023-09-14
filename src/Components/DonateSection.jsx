@@ -3,6 +3,8 @@ import React, { useState, useEffect} from 'react'
 const DonateSection = () => {
     const [selected, toggleSelected] = useState(null)
     const [prevSelected, togglePrevSelected] = useState(null)
+    const [donated, toggleDonated] = useState(false)
+
 
     useEffect(() => {
       if(selected){
@@ -33,14 +35,23 @@ const DonateSection = () => {
     <h2>Be the change.</h2>
     <h3>Donate today</h3>
 
-    <div className="donate-btn-container">
-        <div className="donate-btn" onClick={(e) =>{activeHeading(e.target)}} >$10</div>
-        <div className="donate-btn" onClick={(e) =>{activeHeading(e.target)}}>$50</div>
-        <div className="donate-btn" onClick={(e) =>{activeHeading(e.target)}}>$100</div>
-        <div className="donate-btn" onClick={(e) =>{activeHeading(e.target)}}>Other</div>
-    </div>
+    {!donated && 
+    <div><div className="donate-btn-container">
+    <div className="donate-btn" onClick={(e) =>{activeHeading(e.target)}} >$10</div>
+    <div className="donate-btn" onClick={(e) =>{activeHeading(e.target)}}>$50</div>
+    <div className="donate-btn" onClick={(e) =>{activeHeading(e.target)}}>$100</div>
+    <div className="donate-btn" onClick={(e) =>{activeHeading(e.target)}}>Other</div>
+</div>
 
-    <div className="donate-submit">Donate</div>
+<div className="donate-submit" onClick={() =>{
+  toggleDonated(!donated)}}>Donate</div></div>
+    }
+
+    {donated && 
+    <h3 className='donated'>Thank you for your contribution to cleaner politics in New Zealand!</h3>
+    }
+
+    
     </section>
   )
 }

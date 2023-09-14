@@ -46,13 +46,13 @@ const JoinSection = () => {
     {!submitted && 
     <form className="join-container" id='join'>
     <div className="fields-container">
-    <input className="join-field" name="" placeholder='First name'
+    <input className="join-field" required name="" placeholder='First name'
       value={fname}
       onChange={(e) => setfName(e.target.value)}/>
-    <input className="join-field" name="lname" placeholder='Last name'
+    <input required className="join-field" name="lname" placeholder='Last name'
     value={lname}
     onChange={(e) => setlName(e.target.value)}/>
-    <input className="join-field"  name='send_to'
+    <input required className="join-field"  name='send_to'
     value={recipientEmail}
     onChange={(e) => setRecipientEmail(e.target.value)}
       placeholder='Email'/>
