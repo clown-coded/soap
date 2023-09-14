@@ -20,6 +20,15 @@ align-items: center;
     p{
         font-size: 16px;
         margin-bottom: 10px;
+        font-weight: 400;
+        padding-left: 30px;
+    }
+    h2{
+        margin-bottom: 30px;
+    }
+
+    &:first-child:is(p){
+        padding-left: 0px;
     }
 
 }

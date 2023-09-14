@@ -117,7 +117,7 @@
   
 }
 
-.donate-submit{
+.donate-submit, .join-submit{
   font-size: 50px;
   text-align: right;
   &:hover{
@@ -127,7 +127,16 @@
   }
  
 }
-
+.join-submit{
+  background-color: $blue;
+  color: white;
+  border-color: $blue;
+  border-style: none;
+}
+.submitted-dialog{
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
 .container {
   display: block;
   position: relative;
