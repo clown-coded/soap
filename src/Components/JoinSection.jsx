@@ -9,7 +9,7 @@ const JoinSection = () => {
   const [fname, setfName] = useState('');
   const [lname, setlName] = useState('');
   const [recipientEmail, setRecipientEmail] = useState('');
-  const [submitted, toggleSubmitted] = useState(true)
+  const [submitted, toggleSubmitted] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault();
