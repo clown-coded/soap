@@ -3,10 +3,12 @@
 
 
 .contact-page{
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     display: flex;
     color: white;
+
+    
 
    
 }
@@ -15,7 +17,7 @@
     top: 16vh;
     margin-left: 50px;
     width:50vw;
-    height: 80vh;
+    // height: 80vh;
     border: 2px solid white;
     background-color: $blue;
     padding: 20px 50px;
@@ -24,7 +26,7 @@
         margin-bottom: 200px;
     }
     p{
-        font-size: 18px;
+        font-size: 16px;
         margin-top: 20px;
     }
 
@@ -33,7 +35,7 @@
         
     }
     .join-field{
-        font-size: 20px;
+        font-size: 16px;
         text-align: left;
         font-family: "SuisseIntl-Medium";
         margin-top: 10px;

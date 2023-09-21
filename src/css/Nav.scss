@@ -60,8 +60,8 @@
     display: inline-flex;
    
     width: 150px;
-    height: 100%;
-   padding: 10px 10px;
+    // height: 100%;
+//    padding: 10px 10px;
     color:white;
     background-color: $red;
     justify-content: center;
@@ -70,7 +70,7 @@
     text-transform: uppercase;
     font-weight: 500;
     transition: all .24s ease;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
     &:hover{
         border: 2px solid $red;
         color: $red;
