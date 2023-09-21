@@ -3,39 +3,55 @@
 
 .values-wrapper{
 display: flex;
+position: relative;
 flex-direction: column;
 align-items: center;
-height: 300vh;
+background: url('../../public/assets/bg.png');
+background-position:center;
+background-size: cover;
+
+top: -10px;
+// height: 300vh;
 }
 
 .charter-container, .values-container{
+    
     border: 2px solid white;
     height: auto;
     width: 100vh;
     overflow: hidden;
     display: flex;
-    position: absolute;
+    position: relative;
     flex-direction: column;
     margin-top: 150px ;
     color: white;
     background-color: $blue;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
     padding-left: 50px;
     padding-top: 50px;
     padding-right: 50px;
     p{
-        font-size: 18px;
+        font-size: 12px;
         margin-bottom: 10px;
         font-weight: 400;
         padding-left: 30px;
     }
     h2{
-        margin-bottom: 30px;
+        
     }
     h4{
-        font-size: 22px;
+        font-size: 16px;
         margin-bottom: 30px;
+        margin-top: 30px;
 
+    }
+
+    .values-heading{
+        color: white;
+        font-size: 22px;
+        text-decoration: underline;
+        text-decoration-color: $red;
+        
     }
 
     &:first-child:is(p){
@@ -45,11 +61,14 @@ height: 300vh;
 }
 
 .values-container{
-    top: 110vh;
+    
+    background-position:center;
+    background-size: cover;
+    top: 5vh;
 }
 
 .charter-container{
-    top: 5vh;
+    // top: 160vh;
 }
 
 @media screen and (max-width: 1200px) {
@@ -59,6 +78,7 @@ height: 300vh;
         height: auto;
         padding: 20px 20px;
         padding-bottom: 200px;
+        margin-bottom: 200px;
         border: none;
         p{
             font-size: 16px;
@@ -66,7 +86,7 @@ height: 300vh;
 
     }
     .values-container{
-        top: 120vh;
+        top: 150vh;
     }
     .charter-container{
         top: 5vh;

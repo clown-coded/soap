@@ -114,6 +114,9 @@
   width: 80%;
   &::placeholder{
     color: white;
+    &:hover{
+      color: $red;
+    }
   }
   
   &:focus-visible{
